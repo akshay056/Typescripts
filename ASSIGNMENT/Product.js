@@ -37,5 +37,7 @@ var Product = /** @class */ (function () {
     };
     return Product;
 }());
-var pr = new Product(123, "phone", 15000);
-console.log("Updated Price after applying GST :" + pr.UpdatePrice());
+var pr1 = new Product(123, "phone", 15000);
+console.log("MRP of the product is :" + pr1.UpdatePrice());
+var pr2 = new Product(124, "earphone", 1500, 18);
+console.log("MRP :" + pr2.UpdatePrice());

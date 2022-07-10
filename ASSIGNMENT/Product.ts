@@ -38,4 +38,4 @@ class Product
 var pr1=new Product(123,"phone",15000);
 console.log("MRP of the product is :"+ pr1.UpdatePrice());
 var pr2=new Product(124,"earphone",1500,18);
-console.log("MRP :"+ pr1.UpdatePrice());
+console.log("MRP :"+ pr2.UpdatePrice());
