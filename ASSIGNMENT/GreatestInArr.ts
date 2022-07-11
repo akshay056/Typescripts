@@ -1,4 +1,4 @@
-class GreatestNo
+class GreatestInArr
 {
     arr:number[]=[];
     constructor(array:number[])
@@ -21,5 +21,5 @@ class GreatestNo
     
 }
     var arr:number[]=[25,36,45,8] 
-    var ga=new GreatestNo(arr);
+    var ga=new GreatestInArr(arr);
     console.log(ga.Greatest());

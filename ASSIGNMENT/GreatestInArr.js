@@ -1,9 +1,9 @@
-var GreatestNo = /** @class */ (function () {
-    function GreatestNo(array) {
+var GreatestInArr = /** @class */ (function () {
+    function GreatestInArr(array) {
         this.arr = [];
         this.arr = array;
     }
-    GreatestNo.prototype.Greatest = function () {
+    GreatestInArr.prototype.Greatest = function () {
         var temp = this.arr[0];
         this.arr.forEach(function (element) {
             if (element > temp) {
@@ -12,8 +12,8 @@ var GreatestNo = /** @class */ (function () {
         });
         return temp + "  is greatest";
     };
-    return GreatestNo;
+    return GreatestInArr;
 }());
 var arr = [25, 36, 45, 8];
-var ga = new GreatestNo(arr);
+var ga = new GreatestInArr(arr);
 console.log(ga.Greatest());
