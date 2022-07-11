@@ -10,10 +10,10 @@ var GreatestNo = /** @class */ (function () {
                 temp = element;
             }
         });
-        console.log(temp + "  is greatest");
+        return temp + "  is greatest";
     };
     return GreatestNo;
 }());
 var arr = [25, 36, 45, 8];
 var ga = new GreatestNo(arr);
-ga.Greatest();
+console.log(ga.Greatest());

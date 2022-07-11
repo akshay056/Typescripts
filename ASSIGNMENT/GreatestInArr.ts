@@ -16,10 +16,10 @@ class GreatestNo
                 temp=element;
             }
         });
-        console.log(temp + "  is greatest");
+        return temp + "  is greatest";
     }
     
 }
     var arr:number[]=[25,36,45,8] 
     var ga=new GreatestNo(arr);
-    ga.Greatest();
+    console.log(ga.Greatest());

@@ -31,12 +31,17 @@ var truck = /** @class */ (function (_super) {
         _this.weight = truckweight;
         return _this;
     }
-    truck.prototype.getSalesPrice = function () {
-        return _super.prototype.getSalePrice.call(this) * (this.weight > 2000 ? 0.9 : 0.8);
+    truck.prototype.getSalePrice = function () {
+        if (this.weight > 2000) {
+            return this.regularPrice * 0.9;
+        }
+        else {
+            return this.regularPrice * 0.8;
+        }
     };
     return truck;
 }(Car));
 var c = new Car(200, 200000, "blue");
-console.log(c.getSalePrice);
+console.log("Car Price is : Rs. " + c.getSalePrice());
 var t = new truck(100, 500000, "black", 2500);
-console.log("The weight of car is :" + t.getSalesPrice);
+console.log("The dicounted price of the truck is : Rs. " + t.getSalePrice());
